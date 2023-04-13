@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Halaman Beranda Aplikasi</title>
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di Aplikasi SAMDUT</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda SAMDUT</a></li>
+        <li><a href="#">angkut sampah dengan samdut</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>Apa itu Aplikasi Kami?</h2>
+        <p>Aplikasi SAMDUT adalah sebuah platform yang menyediakan layanan online untuk membantu Anda dalam melakukan pengangkutan sampah sehari-hari.</p>
+      </section>
+      <section>
+        <h2>mempermudah pengangkutan sampah</h2>
+        <ul>
+          <li>Memiliki antarmuka yang mudah digunakan</li>
+          <li>Menyediakan layanan berkualitas</li>
+          <li>Memberikan kepercayaan</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Aplikasi SAMDUT. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
