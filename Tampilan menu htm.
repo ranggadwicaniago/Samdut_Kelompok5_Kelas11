@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu Aplikasi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Aplikasi Saya</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">SAMDUT pengangkutan sampah masyarakat</a></li>
+        <li><a href="#">Layanan mengangkut sampah sesuai kebutuhan</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Selamat Datang di Aplikasi SAMDUT</h2>
+      <p>pilih menu konfirmasi penjemputan sesuai kebutuhan .</p>
+    </main>
+    <footer>
+      <p>&copy; 2023 Aplikasi SAMDUT. Mempermudah pengangkutan sampah masyarakat.</p>
+    </footer>
+  </body>
+</html>
