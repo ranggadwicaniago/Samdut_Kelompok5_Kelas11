@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Konfirmasi Jumlah Koin dari Jenis Sampah yang Diangkut</title>
+</head>
+<body>
+	<h1>Konfirmasi Jumlah Koin dari Jenis Sampah yang Diangkut</h1>
+	<p>Terima kasih telah berkontribusi dalam pengelolaan sampah dengan memilah jenis sampah yang diangkut. Berikut adalah jumlah koin yang akan Anda terima:</p>
+	<table>
+		<tr>
+			<th>Jenis Sampah</th>
+			<th>Jumlah Koin</th>
+		</tr>
+		<tr>
+			<td>Sampah Organik</td>
+			<td>5 koin</td>
+		</tr>
+		<tr>
+			<td>Sampah Anorganik</td>
+			<td>10 koin</td>
+		</tr>
+		<tr>
+			<td>Sampah Berbahaya</td>
+			<td>20 koin</td>
+		</tr>
+	</table>
+	<p>konfirmasi  koin Anda . Terima kasih telah berpartisipasi dalam program SAMDUT.</p>
+</body>
+</html>
