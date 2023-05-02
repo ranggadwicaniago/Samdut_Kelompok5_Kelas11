@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registrasi SAMDUT</title>
+</head>
+<body>
+  <h1>Registrasi SAMDUT</h1>
+  <form action="proses_registrasi.php" method="post">
+    <label for="nama">Nama Lengkap:</label><br>
+    <input type="text" id="nama" name="nama"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <label for="konfirmasi_password">Konfirmasi Password:</label><br>
+    <input type="password" id="konfirmasi_password" name="konfirmasi_password"><br>
+    <label for="alamat">Alamat:</label><br>
+    <textarea id="alamat" name="alamat"></textarea><br>
+    <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+    <input type="radio" id="pria" name="jenis_kelamin" value="pria">
+    <label for="pria">Pria</label>
+    <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
+    <label for="wanita">Wanita</label><br>
+    <input type="submit" value="Daftar">
+  </form>
+</body>
+</html>
