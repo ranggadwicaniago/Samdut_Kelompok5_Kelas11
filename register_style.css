@@ -48,3 +48,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+
+/* CSS untuk membuat radio button pria dan wanita menjadi mendatar */
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+label[for="pria"], label[for="wanita"] {
+  display: inline-block;
+  vertical-align: top;
+}
