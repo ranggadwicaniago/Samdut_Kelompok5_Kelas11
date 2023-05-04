@@ -5,10 +5,26 @@
     <link rel="stylesheet" href="beranda_style.css">
   </head>
   <body>
-    <h1>Selamat Datang di Aplikasi Kami</h1>
-    <p>Silahkan pilih salah satu dari tiga layanan kami:</p>
-    <button onclick="location.href='setor-sampah.html'">Setor Sampah</button>
-    <button onclick="location.href='tukar-koin.html'">Tukar Koin</button>
-    <button onclick="location.href='riwayat.html'">Riwayat</button>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <div class="menu">
+        <button onclick="toggleMenu()">Menu</button>
+        <ul id="menu-items">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </div>
+      <h1>Selamat Datang di Aplikasi Kami</h1>
+      <p>Silahkan pilih salah satu dari tiga layanan kami:</p>
+      <div class="button-container">
+        <button onclick="location.href='setor-sampah.html'">Setor Sampah</button>
+        <button onclick="location.href='tukar-koin.html'">Tukar Koin</button>
+        <button onclick="location.href='riwayat.html'">Riwayat</button>
+      </div>
+    </div>
+    <script src="beranda_script.js"></script>
   </body>
 </html>

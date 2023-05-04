@@ -1,36 +1,87 @@
-/* Mengatur tampilan halaman */
-body {
-  font-family: sans-serif;
-  text-align: center;
-  background-color: #f2f2f2;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1 {
-  color: #333;
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-p {
-  color: #555;
+.logo img {
+  height: 50px;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: none;
+}
+
+.menu button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.menu ul li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.menu ul li:last-child {
+  border-bottom: none;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.menu ul li a:hover {
+  color: #aaa;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 button {
   background-color: #007bff;
+  border: none;
   color: #fff;
+  font-size: 1.2rem;
   padding: 10px 20px;
   border-radius: 5px;
-  border: none;
-  margin: 10px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-/* Mengatur tampilan tombol saat dihover */
-button:hover {
-  background-color: #0062cc;
-}
-
-/* Mengatur tampilan tombol saat diclick */
-button:active {
-  background-color: #005cbf;
-  transform: translateY(1px);
+  cursor: pointer
 }
