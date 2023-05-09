@@ -4,6 +4,7 @@
 body, h1, form {
     margin: 0;
     padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Center the container div vertically and horizontally */
@@ -29,6 +30,8 @@ form {
 
 /* Style for form labels */
 label {
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 20px;
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
