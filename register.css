@@ -27,7 +27,6 @@ form {
 
 /* Styling untuk elemen input dan textarea */
 input[type="text"],
-input[type="email"],
 input[type="password"],
 textarea {
   width: 100%;
