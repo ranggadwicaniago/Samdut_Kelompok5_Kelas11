@@ -1,35 +1,28 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "database_name";
+//koneksi ke database
+$conn = mysqli_connect("localhost", "username", "password", "nama_database");
 
-// Membuat koneksi ke database
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+//mengambil data dari form
+$nama = $_POST['nama'];
+$password = $_POST['password'];
+$konfirmasi_password = $_POST['konfirmasi_password'];
+$alamat = $_POST['alamat'];
+$jenis_kelamin = $_POST['jenis_kelamin'];
 
-// Memeriksa koneksi
-if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
+//validasi password dan konfirmasi password
+if ($password != $konfirmasi_password) {
+  echo "Konfirmasi password tidak sesuai";
+  exit();
 }
 
-// Menambahkan data ke dalam tabel
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $nama = $_POST["nama"];
-  $password = $_POST["password"];
-  $konfirmasi_password = $_POST["konfirmasi_password"];
-  $alamat = $_POST["alamat"];
-  $jenis_kelamin = $_POST["jenis_kelamin"];
-
-  $sql = "INSERT INTO tabel_pengguna (nama, password, konfirmasi_password, alamat, jenis_kelamin)
-  VALUES ('$nama', '$password', '$konfirmasi_password', '$alamat', '$jenis_kelamin')";
-
-  if (mysqli_query($conn, $sql)) {
-    echo "Data berhasil ditambahkan";
-  } else {
-    echo "Terjadi kesalahan: " . $sql . "<br>" . mysqli_error($conn);
-  }
+//query untuk menyimpan data ke dalam database
+$sql = "INSERT INTO tabel_user (nama, password, alamat, jenis_kelamin) VALUES ('$nama', '$password', '$alamat', '$jenis_kelamin')";
+if (mysqli_query($conn, $sql)) {
+  echo "Registrasi berhasil";
+} else {
+  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-// Menutup koneksi
+//menutup koneksi ke database
 mysqli_close($conn);
 ?>
