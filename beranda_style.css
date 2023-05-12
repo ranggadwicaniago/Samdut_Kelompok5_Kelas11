@@ -1,88 +1,92 @@
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #212121;
+  color: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
 }
 
 .logo {
   position: absolute;
   top: 20px;
   right: 20px;
+  font-size: 55px;
+  font-weight: bold;
 }
 
-.logo img {
-  height: 50px;
-}
-
-.menu {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  display: none;
-}
-
-.menu button {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+nav {
   display: flex;
-  flex-direction: column;
-  background-color: #333;
-  position: absolute;
-  top: 70px;
-  left: 20px;
-  width: 200px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  position: relative; /* atau absolute */
 }
 
-.menu ul li {
-  padding: 10px;
-  border-bottom: 1px solid #555;
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0; /* ubah margin menjadi 0 */
+  padding: 0; /* ubah padding menjadi 0 */
+  position: relative; /* atau absolute */
+  right: 0; /* untuk membuatnya berada di sebelah kanan */
 }
 
-.menu ul li:last-child {
-  border-bottom: none;
+nav li {
+  margin-left: 20px;
 }
 
-.menu ul li a {
+nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.2s ease-in-out;
+  transition: all 0.3s ease;
 }
 
-.menu ul li a:hover {
-  color: #aaa;
+nav a:hover {
+  color: #e3e3e3;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .button-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 50px;
 }
 
 button {
-  background-color: #007bff;
-  border: none;
+  background-color: #212121;
   color: #fff;
-  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
   padding: 10px 20px;
-  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
   margin-right: 10px;
-  cursor: pointer
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #424242;
 }
