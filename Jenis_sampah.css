@@ -47,3 +47,22 @@ body {
     }
   }
   
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jenis Sampah untuk Pengangkutan Sampah</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Jenis Sampah untuk Pengangkutan Sampah</h1>
+		<p>Ada beberapa jenis sampah yang harus dikategorikan dengan benar sebelum diangkut:</p>
+		<ul>
+			<li>Sampah organik (sisa makanan, daun kering, dan lain-lain)</li>
+			<li>Sampah anorganik (kertas, plastik, logam, dan kaca)</li>
+			<li>Sampah berbahaya (baterai, obat-obatan, limbah medis, dan lain-lain)</li>
+		</ul>
+		<p>Pastikan untuk membuang sampah dengan benar sesuai dengan jenisnya dan jangan mencampurkan jenis sampah yang berbeda. Hal ini akan membantu memudahkan proses daur ulang dan mengurangi dampak negatif terhadap lingkungan.</p>
+	</div>
+</body>
+</html>
