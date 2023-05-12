@@ -2,50 +2,158 @@
 <html>
   <head>
     <title>SAMDUT - Sampah di Duitin!</title>
-    <link rel="stylesheet" href="beranda_style.css">
-    <!-- Tambahkan baris berikut untuk memuat Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  </head>
+    <div
+      class="background">
+    </div>
+    <style>
+           body {
+           margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+        }
+
+          header {
+          background-color: #f8f2f2;
+              color: #fff;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 10px 20px;
+            }
+
+            .logo {
+              position: absolute;
+              top: 20px;
+              right: 20px;
+              font-size: 55px;
+              font-weight: bold;
+              color: antiquewhite;
+            }
+
+            nav {
+              display: flex;
+              position: relative; /* atau absolute */
+              margin-top: 20px;
+            }
+
+            nav ul {
+              display: flex;
+              list-style: none;
+              margin: 0; /* ubah margin menjadi 0 */
+              padding: 0; /* ubah padding menjadi 0 */
+              position: relative; /* atau absolute */
+              right: 0; /* untuk membuatnya berada di sebelah kanan */
+            }
+
+            nav li {
+              margin-left: 20px;
+              margin-top: 7px;
+            }
+
+            nav a {
+              color: #fff;
+              text-decoration: none;
+              transition: all 0.3s ease;
+            }
+
+            nav a:hover {
+              color: #e3e3e3;
+            }
+            .container {
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 20px;
+            }
+
+            h1 {
+              font-size: 36px;
+              font-weight: bold;
+              font-style: initial;
+              margin-top: 50px;
+              color: antiquewhite;
+            }
+
+            p {
+              font-size: 18px;
+              line-height: 1.5;
+              margin-bottom: 20px;
+            }
+
+            .button-container {
+              display: flex;
+              justify-content: center;
+              margin-top: 50px;
+            }
+
+            button {
+              background-color: #212121;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              padding: 10px 20px;
+              font-size: 18px;
+              font-weight: bold;
+              margin-right: 10px;
+              cursor: pointer;
+              transition: all 0.3s ease;
+            }
+
+            button:hover {
+              background-color: #110909;
+            }
+
+                .background {
+                background-image: url("1.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+              }
+              .navbar-brand-text {
+                color: rgb(37, 202, 37);
+                font-size: 20px;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                
+              }
+          </style>
+      </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-brand">
-        <span class="navbar-brand-text">SAMDUT</span>
-      </div>
-      <div class= "row justify-content-center">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Profil</a>
-        </li>
-      </ul>
-    </div>
-    </nav>
-    <div class="container">
-      <div class="logo">
-        <!-- Ganti baris kode ini -->
-        <i class="bi bi-person-lines-fill"></i>
-      </div>
-      <div class="menu">
-        <button onclick="toggleMenu()">Menu</button>
-        <ul id="menu-items">
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#">Tentang Kami</a></li>
-          <li><a href="#">Kontak</a></li>
+        <nav class="navbar">
+          <div class="navbar-brand">
+            <span class="navbar-brand-text">SAMDUT</span>
+          </div>
+          <div class= "row justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profil</a>
+            </li>
         </ul>
-      </div>
-      <h1>Selamat Datang di Aplikasi Kami</h1>
-      <p>Silahkan pilih salah satu dari tiga layanan kami:</p>
-      <div class="button-container">
-        <button onclick="location.href='setor_sampah.html'">Setor Sampah</button>
-        <button onclick="location.href='tukar_koin.html'">Tukar Koin</button>
-        <button onclick="location.href='riwayat.html'">Riwayat</button>
-      </div>
-    </div>
-    <script src="beranda_script.js"></script>
-  </body>
+    </nav>
+        <div class="container">
+          <div class="logo">
+          </div>
+          <h1>Selamat Datang di Aplikasi Kami</h1>
+          <p style="color: #f5f8f7;">silahkan pilih salah satu dari tiga layanan kami:</p>
+          <div class="button-container">
+            <button onclick="location.href='setor_sampah.html'">Setor Sampah</button>
+            <button onclick="location.href='tukar_koin.html'">Tukar Koin</button>
+            <button onclick="location.href='riwayat.html'">Riwayat</button>
+          </div>
+        <script src="beranda_script.js"></script>
+    </body>
 </html>
