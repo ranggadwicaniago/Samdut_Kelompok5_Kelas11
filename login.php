@@ -1,3 +1,35 @@
+<?php
+//koneksi ke database
+$conn = mysqli_connect("localhost", "root", "", "samdut");
+
+//check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  // Mengambil data dari form
+  $username = $_POST['username'];
+  $password = $_POST['pass'];
+
+  // Melakukan query untuk memeriksa kecocokan username dan password
+  $query = "SELECT * FROM user WHERE username = '$username' AND pass = '$password'";
+  $result = mysqli_query($conn, $query);
+
+  if (mysqli_num_rows($result) > 0) {
+    // Login berhasil, arahkan pengguna ke halaman utama atau halaman yang diinginkan
+    header("Location: beranda.php");
+    exit();
+  } else {
+    // Login gagal, tampilkan pesan kesalahan
+    $error_message = "Username atau password salah. Silakan coba lagi.";
+  }
+}
+
+// Tutup koneksi ke database
+mysqli_close($conn);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,17 +39,20 @@
 <body>
     <div class="container">
         <h1>LOGIN SAMDUT<h1>
-        <form action="auth/auth.php" method="post"> 
+        <form action="" method="post"> <!-- Perhatikan perubahan pada aksi formulir -->
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Masukkan username">
 
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Masukkan password">
+            <input type="password" id="password" name="pass" placeholder="Masukkan password">
 
             <input type="submit" value="Login">
-            <p style="font-family: Arial, Helvetica, sans-serif  ;font-size: 15px" align="center">belum memiliki akun? <a href="register.php">Daftar akun</a></p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 15px" align="center">Belum memiliki akun? <a href="register.php">Daftar akun</a></p>
         </form>
-
+        
+        <?php if (isset($error_message)): ?>
+          <p style="color: red;"><?php echo $error_message; ?></p>
+        <?php endif; ?>
     </div>
 </body>
 </html>

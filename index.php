@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>SAMDUT - Sampah di Duitin!</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../Samdut_Kelompok5_Kelas11/css/index.css">
 </head>
 <body>
     <div class="container">
