@@ -36,4 +36,47 @@ body {
     text-align: center;
   }
   
+/* Style untuk elemen <body> */
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  /* Style untuk elemen <h1> */
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Style untuk elemen <p> */
+  p {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Style untuk elemen <button> */
+  button {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Style untuk ketika tombol <button> ditekan */
+  button:hover {
+    background-color: #357ae8;
+  }
+
   
