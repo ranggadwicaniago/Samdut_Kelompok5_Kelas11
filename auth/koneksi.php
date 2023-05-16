@@ -4,9 +4,9 @@ $dbname = 'samdut';
 $usernm = 'root';
 $pass = '';
 
-$mysqli = mysqli_connect($host, $dbname, $usernm, $pass);
+$mysqli = mysqli_connect($host, $usernm, $pass, $dbname);
 
-if($mysqli){
+if(!$mysqli){
     die("Koneksi gagal" . mysqli_connect_error());
 
 }
