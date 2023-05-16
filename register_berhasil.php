@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +12,7 @@
     <h1>Registrasi Berhasil</h1>
     <p>Akun Anda telah berhasil dibuat.</p>
     <p>Terima kasih telah bergabung dengan SAMDUT!</p>
-    <p>Silakan <a href="login.html">masuk</a> untuk melanjutkan.</p>
+    <p>Silakan <a href="login.php">masuk</a> untuk melanjutkan.</p>
   </div>
 </body>
 </html>

@@ -50,17 +50,10 @@
 //koneksi ke database
 $conn = mysqli_connect("localhost", "root", "", "samdut");
 
-// Check connection
+//check connection
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
-
-//mengambil data dari form
-$username = $_POST['username'];
-$pass = $_POST['pass'];
-$konfirmasi_password = $_POST['konfirmasi_password'];
-$alamat = $_POST['alamat'];
-$jenis_kelamin = $_POST['jenis_kelamin'];
 
 //validasi username tidak boleh kosong
 if (empty($username)) {
@@ -81,8 +74,15 @@ if (strlen($pass) < 8) {
 }
 
 // Prepare and bind the query
-$stmt = $conn->prepare("INSERT INTO user (username, pass, konfirmasi_password, alamat, jenis_kelamin) VALUES (?, ?, ?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO user ( username, pass, konfirmasi_password, alamat, jenis_kelamin ) VALUES (?, ?, ?, ?, ?)");
 $stmt->bind_param("sssss", $username, $pass, $konfirmasi_password, $alamat, $jenis_kelamin);
+
+//mengambil data dari form
+$username = $_POST["username"];
+$pass = $_POST["pass"];
+$konfirmasi_password = $_POST["konfirmasi_password"];
+$alamat = $_POST["alamat"];
+$jenis_kelamin = $_POST["jenis_kelamin"];
 
 // Execute the query
 if ($stmt->execute()) {
