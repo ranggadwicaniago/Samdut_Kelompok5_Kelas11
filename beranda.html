@@ -98,11 +98,22 @@
               margin-right: 10px;
               cursor: pointer;
               transition: all 0.3s ease;
+              
             }
 
             button:hover {
               background-color: #110909;
             }
+            .btn-shadow {
+              transition: all 0.3s ease;
+              box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .btn-shadow:active {
+              transform: translateY(2px);
+              box-shadow: none;
+              }
+
 
                 .background {
                 background-image: url("1.jpg");
@@ -151,9 +162,15 @@
           <h1>Selamat Datang di Aplikasi Kami</h1>
           <p style="color: #f5f8f7;">silahkan pilih salah satu dari tiga layanan kami:</p>
           <div class="button-container">
-            <button onclick="location.href='setor_sampah.html'">Setor Sampah</button>
-            <button onclick="location.href='tukar_koin.html'">Tukar Koin</button>
-            <button onclick="location.href='riwayat.html'">Riwayat</button>
+            <button class="btn-shadow" onclick="location.href='setor_sampah.html'">
+              <img src="setor_sampah.png" alt="Setor Sampah" width="50" height="50">
+            </button>
+            <button class="btn-shadow" onclick="location.href='tukar_koin.html'">
+              <img src="tukar_koin.png" alt="Tukar Koin" width="50" height="50">
+            </button>
+            <button class="btn-shadow" onclick="location.href='riwayat.html'">
+              <img src="riwayat.png" alt="Riwayat" width="50" height="50">
+            </button>            
           </div>
         <script src="beranda_script.js"></script>
     </body>
