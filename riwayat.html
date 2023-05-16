@@ -1,99 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Tukar koin </title>
-        <link rel="stylesheet" href="riwayat.css">
-        <style>
-        body {
-            background-color: #f9f9f9;
-            font-family: Arial, sans-serif;
-            text-align: center;
-          }
-          
-          h1 {
-            color: #008080;
-          }
-          
-          p {
-            font-size: 20px;
-            margin: 20px 0;
-          }
-          
-          button {
-            background-color: #008080;
-            border: none;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
-            margin-top: 30px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-          }
-          
-          button:hover {
-            background-color: #006666;
-        
-          }
-          
-          pre {
-            text-align: center;
-          }
-          
-        /* Style untuk elemen <body> */
-        body {
-            background-color: #f8f8f8;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-            margin: 0;
-          }
-          
-          /* Style untuk elemen <h1> */
-          h1 {
-            font-size: 36px;
-            text-align: center;
-            margin-top: 50px;
-          }
-          
-          /* Style untuk elemen <p> */
-          p {
-            font-size: 24px;
-            text-align: center;
-            margin-top: 20px;
-          }
-          
-          /* Style untuk elemen <button> */
-          button {
-            background-color: #4285f4;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            padding: 10px 20px;
-            margin-top: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-            display: block;
-            margin: 0 auto;
-          }
-          
-          /* Style untuk ketika tombol <button> ditekan */
-          button:hover {
-            background-color: #357ae8;
-          }
-        
-        </style>
-    </head>
-    <body>
-        <h1>Transaksi</h1>
-        <p>koin anda berhasil ditukar</p>
-    </body>
-</br>
-    <pre>
-        <a href="Beranda.html"><button>kembali ke beranda </button></a>
-    </pre>
+<head>
+  <title>Tukar koin</title>
+  <link rel="stylesheet" href="riwayat.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/bootstrap-icons.min.css">
+  <style>
+    body {
+      background-color: #0eece1;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    
+    }
+
+    .container {
+      max-width: 500px;
+      padding: 20px;
+      background-color: #fff;
+      text-align: center;
+      border-radius: 100px;
+    }
+
+    h1 {
+      color: #008080;
+      font-size: 36px;
+      margin-top: 50px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #008080;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 30px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #006666;
+    }
+
+    pre {
+      text-align: center;
+    }
+
+    /* Style untuk elemen <button> */
+    button {
+      background-color: #4285f4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Style untuk ketika tombol <button> ditekan */
+    button:hover {
+      background-color: #063683;
+    }
+    
+    /* Custom styles for Bootstrap icon */
+    .custom-icon {
+      color: #08e6de; /* Change the color here */
+      font-size: 100px; /* Change the size here */
+    }
+  
+    .center-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Transaksi</h1>
+    <div class="center-icon">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#008080" class="bi bi-check-circle custom-icon" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.47 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+</svg>
+</span>
+</div>
+<p>Koin Anda berhasil ditukar</p>
+<pre>
+<a href="Beranda.html"><button>kembali ke beranda</button></a>
+</pre>
+
+  </div>
 </body>
 </html>
