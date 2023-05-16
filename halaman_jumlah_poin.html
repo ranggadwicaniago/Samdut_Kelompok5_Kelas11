@@ -1,94 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>SAMDUT - Sampah di Duitin!</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
-      h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
-        text-align: center;
-      }
-      .coin-count {
-        font-size: 24px;
-        margin-bottom: 20px;
-        text-align: center;
-      }
-      .button {
-        display: block;
-        width: 100%;
-        max-width: 200px;
-        margin: 0 auto;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        background-color: #4caf50;
-        color: #fff;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        cursor: pointer;
-      }
-      .button:hover {
-        background-color: #3e8e41;
-      }
-      .coin-block {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        width: 100%;
-        background-color: #4caf50;
-        color: #fff;
-        font-size: 24px;
-        font-weight: bold;
-        margin-top: 20px;
-      }
-      .profile-icon {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jumlah Poin Tersedia</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #22c34f; /* Warna latar belakang hijau */
+    }
 
-      .profile-icon img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>HALAMAN BERANDA</h1>
-      <p class="coin-count">anda memiliki <span id="coin-count">100</span> koin</p>
-      <p class="coin-count, coin-block">110 koin</p>
-    </div>
-      <button class="button" id="ambil-sampah">ambil Sampah</button>
-    </div>
-    <script>
-      
-      // fungsi untuk mengambil sampah
-      function ambilSampah() {
-        var coinCount = document.getElementById('coin-count');
-        var currentCount = parseInt(coinCount.innerText);
-        var newCount = currentCount + 10;
-        coinCount.innerText = newCount;
-      }
-      
-      // tambahkan event listener untuk tombol "Ambil Sampah"
-      var ambilSampahButton = document.getElementById('ambil-sampah');
-      ambilSampahButton.addEventListener('click', ambilSampah);
-    </script>
-  </body>
+    .container {
+      padding: 20px;
+      background-color: #ffffff; /* Warna latar belakang blok */
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Jumlah Poin Tersedia</h1>
+    <p>Jumlah poin Anda: <span id="jumlah-poin"></span></p>
+  </div>
+
+  <script>
+    // Mengganti "100" dengan jumlah poin yang sesuai dari sumber data Anda
+    const jumlahPoin = 100;
+
+    // Menampilkan jumlah poin pada elemen dengan id "jumlah-poin"
+    document.getElementById("jumlah-poin").textContent = jumlahPoin;
+  </script>
+</body>
 </html>
-
