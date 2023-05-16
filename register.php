@@ -1,9 +1,14 @@
 <?php
 //koneksi ke database
-$conn = mysqli_connect("localhost", "username", "password", "nama_database");
+$conn = mysqli_connect("localhost", "root", "", "samdut");
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
 
 //mengambil data dari form
-$nama = $_POST['nama'];
+$username = $_POST['username'];
 $password = $_POST['password'];
 $konfirmasi_password = $_POST['konfirmasi_password'];
 $alamat = $_POST['alamat'];
@@ -15,16 +20,20 @@ if ($password != $konfirmasi_password) {
   exit();
 }
 
-//query untuk menyimpan data ke dalam database
-$sql = "INSERT INTO tabel_user (nama, password, alamat, jenis_kelamin) VALUES ('$nama', '$password', '$alamat', '$jenis_kelamin')";
-if (mysqli_query($conn, $sql)) {
-  echo "Registrasi berhasil";
+// Prepare and bind the query
+$stmt = $conn->prepare("INSERT INTO user (username, password, konfirmasi_password, alamat, jenis_kelamin) VALUES (?, ?, ?, ?, ?)");
+$stmt->bind_param("sssss", $username, $password, $konfirmasi_password, $alamat, $jenis_kelamin);
+
+// Execute the query
+if ($stmt->execute()) {
+  header("Location: register_berhasil.php"); // Redirect to the success page
+  exit();
 } else {
-  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  echo "Error: " . $stmt->error;
 }
 
-//menutup koneksi ke database
-mysqli_close($conn);
+$stmt->close();
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -39,9 +48,9 @@ mysqli_close($conn);
 <body style="background-color: #9ee060;">
   <div class="container">
     <h1>Buat akun baru</h1>
-    <form action="proses_registrasi.php" method="post">
-      <label for="nama">Nama Lengkap:</label><br>
-      <input type="text" id="nama" name="nama"><br>
+    <form method="post">
+      <label for="username">Nama Lengkap:</label><br>
+      <input type="text" id="username" name="username"><br>
       <label for="password">Password:</label><br>
       <input type="password" id="password" name="password"><br>
       <label for="konfirmasi_password">Konfirmasi Password:</label><br>
@@ -56,7 +65,7 @@ mysqli_close($conn);
       <input type="submit" value="Daftar">
     </form>
 
-    <p align="center">Sudah memiliki akun? <a href="login.html">Masuk</a></p>
+    <p align="center">Sudah memiliki akun? <a href="login.php">Masuk</a></p>
   </div>
 </body>
 </html>
