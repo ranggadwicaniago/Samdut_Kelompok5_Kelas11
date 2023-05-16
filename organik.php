@@ -24,5 +24,7 @@
     <li>Pastikan wadah sampah organik tidak terlalu penuh dan segera dibuang ke tempat pengolahan sampah organik</li>
     <li>Jika memungkinkan, buatlah kompos dari sampah organik untuk dijadikan pupuk organik</li>
   </ul>
+  
+  <a href="info_sampah.html">Kembali ke Info Sampah</a>
 </body>
 </html>
