@@ -10,11 +10,10 @@
         <h2>Duitin sampahmu!</h2>
         <nav>
             <ul>
-                <li><a href="login.html">SignIn</a></li>
-                <li><a href="register.html">SignUp</a></li>
+                <li><a href="login.php">SignIn</a></li>
+                <li><a href="register.php">SignUp</a></li>
             </ul>
         </nav>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
