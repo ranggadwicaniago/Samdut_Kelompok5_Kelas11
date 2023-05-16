@@ -1,17 +1,78 @@
 <!DOCTYPE html>
-<html lang="en>">
-    <head>
-        <title> BERANDA </title>
-    </head>
-    <body> 
-        <h1> setor sampah </h1> 
-        </br>
-        <p>alamat</p>
-        <input type="text">
-        <p>jumlah sampah</p>
-        <input type="number">
-    </body>
-    <pre>
-        <a href="riwayat setor sampah.html"><button> setor sampah sekarang </button></a>
-    </pre>
-     </html>
+<html lang="en">
+  <head>
+    <title>BERANDA</title>
+    <style>
+      body {
+        margin: 30px;
+        border-top-left-radius: 5cm;
+        padding: 30px;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-image: url("2.jpg");
+        background-position: center 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        position: fixed;
+      }
+
+      h1 {
+       color: #53bb6f;
+      font-size: 48px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      letter-spacing: 2px;
+      text-align: center;
+      }
+
+      h1 span {
+        color: #fff;
+        background-color: #53bb6f;
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        padding: 8px;
+        border-radius: 4px;
+        border: none;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+      }
+
+      button {
+      background-color: #3e4043;
+      color: #fff;
+      padding: 12px;
+      border-radius: 4px;
+      border: none;
+      cursor: hand;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+      button:hover {
+        background-color: #358ee7a9;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SETORKAN SAMPAHMU SEGERA!</h1>
+    <p>alamat</p>
+    <input type="text" />
+    <p>jumlah sampah</p>
+    <input type="number" />
+    <div class="background"></div>
+    <div class="container">
+      <a href="riwayat_setor_sampah.html"><button>setor sampah sekarang</button></a>
+    </div>
+  </body>
+</html>
