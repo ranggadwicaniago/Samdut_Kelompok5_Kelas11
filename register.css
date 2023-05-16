@@ -1,0 +1,77 @@
+/* Styling untuk elemen h1 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container {
+  width: 700px;
+  border-radius: 20px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+}
+/* Styling untuk elemen form */
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* Styling untuk elemen input dan textarea */
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styling untuk elemen radio button */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Styling untuk elemen label */
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Styling untuk tombol submit */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styling untuk tombol submit ketika dihover */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* CSS untuk membuat radio button pria dan wanita menjadi mendatar */
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+label[for="pria"], label[for="wanita"] {
+  display: inline-block;
+  vertical-align: top;
+}
