@@ -66,7 +66,7 @@ mysqli_close($conn);
         </form>
         
         <?php if (isset($error_message)): ?>
-          <p style="color: red;"><?php echo $error_message; ?></p>
+          <p style="color: red; font-family: Arial, Helvetica, sans-serif; font-size: 15px;"><?php echo $error_message; ?></p>
         <?php endif; ?>
     </div>
 </body>
