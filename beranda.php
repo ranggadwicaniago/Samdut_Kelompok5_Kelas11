@@ -165,7 +165,7 @@
             </ul>
           </nav>
           <i class="bi bi-person-circle logo" onclick="location.href='profil.html'"></i>
-        </header>
+          </header>          
         <div class="container">
           <h1>Selamat Datang di Aplikasi Kami</h1>
           <p style="color: #f5f8f7;">Silahkan pilih salah satu dari tiga layanan kami:</p>
