@@ -93,7 +93,7 @@
     <input type="text" />
     <p>jumlah sampah</p>
     <input type="number" />
-    <a href="riwayat_setor_sampah.html"><button>setor sampah sekarang</button></a>
+    <a href="ss_approved.php"><button>setor sampah sekarang</button></a>
   </div>
   <h1>SETORKAN SAMPAHMU SEGERA!</h1>
 </body>

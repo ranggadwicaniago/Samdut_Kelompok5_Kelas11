@@ -168,9 +168,9 @@
         </header>
         <div class="container">
           <h1>Selamat Datang di Aplikasi Kami</h1>
-          <p style="color: #f5f8f7;">Silahkan pilih salah satu dari tiga layanan kami:</p>
+          <p style="color: #f5f8f7;">Silahkan pilih salah satu dari empat layanan kami:</p>
           <div class="button-container">
-            <button class="btn-shadow" onclick="location.href='setor_sampah.php'">
+            <button class="btn-shadow" onclick="location.href='setor_s.php'">
               SETOR SAMPAH
             </button>
             <button class="btn-shadow" onclick="location.href='tukar_koin.php'">

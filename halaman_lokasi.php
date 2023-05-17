@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <?php
-        include 'navbar.php';
-    ?>
     <div class="background"></div>
     <div class="container-fluid">
         <div class="row justify-content-center mb-3">
