@@ -35,6 +35,21 @@ mysqli_close($conn);
 <head>
     <title>Login - Aplikasi SAMDUT</title>
     <link rel="stylesheet" href="login.css">
+    <div class="background"></div>
+    <style>
+    .background {
+        background-image: url("../Samdut_Kelompok5_Kelas11/asset/Nature.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+        </style>
 </head>
 <body>
     <div class="container">
@@ -51,7 +66,7 @@ mysqli_close($conn);
         </form>
         
         <?php if (isset($error_message)): ?>
-          <p style="color: red;"><?php echo $error_message; ?></p>
+          <p style="color: red; font-family: Arial, Helvetica, sans-serif; font-size: 15px;"><?php echo $error_message; ?></p>
         <?php endif; ?>
     </div>
 </body>

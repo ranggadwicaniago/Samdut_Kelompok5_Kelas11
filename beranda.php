@@ -133,7 +133,7 @@
       }
 
       .background {
-        background-image: url("../asset/1.jpg");
+        background-image: url("../Samdut_Kelompok5_Kelas11/asset/1.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -161,25 +161,25 @@
               </li>
             </ul>
           </nav>
-          <i class="bi bi-person-circle logo" onclick="location.href='profil.html'"></i>
+          <i class="bi bi-person-circle logo" onclick="location.href='profil.php'"></i>
         </header>
         <div class="container">
           <h1>Selamat Datang di Aplikasi Kami</h1>
           <p style="color: #f5f8f7;">Silahkan pilih salah satu dari tiga layanan kami:</p>
           <div class="button-container">
-            <button class="btn-shadow" onclick="location.href='setor_sampah.html'">
+            <button class="btn-shadow" onclick="location.href='setor_sampah.php'">
               <img src="../asset/trash_can.jpg" alt="Setor Sampah" width="50" height="50">
               SETOR SAMPAH
             </button>
-            <button class="btn-shadow" onclick="location.href='tukar_koin.html'">
+            <button class="btn-shadow" onclick="location.href='tukar_koin.php'">
               <img src="tukar_koin.png" alt="Tukar Koin" width="50" height="50">
               TUKAR KOIN
             </button>
-            <button class="btn-shadow" onclick="location.href='riwayat.html'">
+            <button class="btn-shadow" onclick="location.href='riwayat_transaksi.php'">
               <img src="riwayat.png" alt="Riwayat" width="50" height="50">
               RIWAYAT
             </button>
-            <button class="btn-shadow" onclick="location.href='info_sampah.html'">
+            <button class="btn-shadow" onclick="location.href='info_sampah.php'">
               <img src="ri.png" alt="info_sampah" width="50" height="50">
               INFO SAMPAH
             </button>

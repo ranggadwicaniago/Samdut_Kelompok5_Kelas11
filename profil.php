@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+// Setelah proses login berhasil
+$_SESSION['username'] = $username; // Simpan username pengguna dalam sesi
+$_SESSION['alamat'] = $alamat; // Simpan alamat pengguna dalam sesi
+
+
 ?>
 
 <!DOCTYPE html>
@@ -24,25 +30,27 @@ session_start();
             <img src="https://via.placeholder.com/150" class="img-thumbnail" alt="Foto Profil">
           </div>
           <div class="col-md-8">
-          <form>
-            <div class="row mb-3">
-              <label for="name" class="col-sm-3 col-form-label">Nama Lengkap:</label>
-              <div class="col-sm-9">
-                <span class="text-truncate"><?php echo $_SESSION['username'];?></span>
+            <form>
+              <div class="row mb-3">
+                <label for="name" class="col-sm-3 col-form-label">Nama Lengkap:</label>
+                <div class="col-sm-9">
+                  <span class="text-truncate"><?php echo $_SESSION['username'];?></span>
+                </div>
               </div>
-            </div>
-            <div class="row mb-3">
-              <label for="phone" class="col-sm-3 col-form-label">Nomor Telepon:</label>
-              <div class="col-sm-9">
-                <span class="text-truncate"><?php echo $_SESSION['no_telepon'];?></span>
+              <div class="row mb-3">
+                <label for="alamat" class="col-sm-3 col-form-label">Alamat:</label>
+                <div class="col-sm-9">
+                  <span class="text-truncate"><?php echo $_SESSION['alamat'];?></span>
+                </div>
               </div>
-            </div>
-          </form>
-
+            </form>
+            
+            <!-- Tombol Edit Profil -->
             <div class="text-center">
               <button type="submit" class="btn btn-primary mb-3" onclick="location.href='editprofil.php'">Edit Profil</button>
             </div>
           </div>
+
         </div>
       </div>
           </div>
