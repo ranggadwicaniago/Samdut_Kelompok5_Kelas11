@@ -160,7 +160,7 @@
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="halaman lokasi.html">Lokasi penampungan</a>
+                <a class="nav-link" href="halaman_lokasi.php">Lokasi penampungan</a>
               </li>
             </ul>
           </nav>
@@ -171,19 +171,15 @@
           <p style="color: #f5f8f7;">Silahkan pilih salah satu dari tiga layanan kami:</p>
           <div class="button-container">
             <button class="btn-shadow" onclick="location.href='setor_sampah.php'">
-              <img src="../asset/trash_can.jpg" alt="Setor Sampah" width="50" height="50">
               SETOR SAMPAH
             </button>
             <button class="btn-shadow" onclick="location.href='tukar_koin.php'">
-              <img src="tukar_koin.png" alt="Tukar Koin" width="50" height="50">
               TUKAR KOIN
             </button>
             <button class="btn-shadow" onclick="location.href='riwayat_transaksi.php'">
-              <img src="riwayat.png" alt="Riwayat" width="50" height="50">
               RIWAYAT
             </button>
             <button class="btn-shadow" onclick="location.href='info_sampah.php'">
-              <img src="ri.png" alt="info_sampah" width="50" height="50">
               INFO SAMPAH
             </button>
           </div>
