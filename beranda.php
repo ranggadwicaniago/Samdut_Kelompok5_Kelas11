@@ -154,10 +154,13 @@
             </div>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="beranda.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="halaman lokasi.html">Lokasi penampungan</a>
               </li>
             </ul>
           </nav>
