@@ -54,7 +54,7 @@
       </span>
     </div>
     <p>sampah segera diangkut</p>
-    <a href="Beranda.html"><button>Kembali ke Beranda</button></a>
+    <a href="beranda.php"><button>Kembali ke Beranda</button></a>
   </div>
 </body>
 </html>
